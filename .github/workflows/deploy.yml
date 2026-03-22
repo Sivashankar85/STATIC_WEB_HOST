@@ -22,4 +22,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://demo-mar21 --delete --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync ./2156_graphite_creative/ s3://demo-mar21 --delete
